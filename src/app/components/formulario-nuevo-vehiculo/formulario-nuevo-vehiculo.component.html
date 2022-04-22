@@ -1,0 +1,28 @@
+<div id="principal">
+    <div id="formulario">
+        <form [formGroup]="formulario">
+            <div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Nombre del vehículo</mat-label>
+                    <input matInput formControlName="nombre">
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Descripción</mat-label>
+                    <textarea matInput formControlName="descripcion" rows="12"></textarea>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="fill">
+                    <mat-label>Imagen del vehículo</mat-label>
+                    <input matInput formControlName="imagen">
+                </mat-form-field>
+            </div>
+            <div>
+                <button mat-raised-button color="primary" (click)="crearVehiculo()">Crear</button>
+            </div>
+        </form>
+        {{ formulario.value | json }}
+    </div>
+</div>

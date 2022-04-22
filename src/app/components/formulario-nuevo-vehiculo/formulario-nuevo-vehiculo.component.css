@@ -1,0 +1,10 @@
+#principal {
+    width: 100%;
+}
+#formulario {
+    width: 800px;
+    margin: auto;
+}
+mat-form-field {
+    width: 100%;
+}
